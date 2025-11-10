@@ -1,0 +1,10 @@
+:root {
+background-color: blanchedalmond;
+--fg-color: red;
+}
+
+body {
+    padding: 2.5rem;
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+}
