@@ -1,6 +1,7 @@
 :root {
 background-color: ##f9f2ee;
 --fg-color: #2B2774;
+font-size: 125%;
 }
 
 body {
@@ -8,3 +9,16 @@ body {
     background-color: var(--bg-color);
     color: var(--fg-color);
 }
+
+ p {
+	margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+	}
+
+h1, h3, h2, footer {
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+}
+
