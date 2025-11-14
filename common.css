@@ -12,7 +12,6 @@ body {
 
 
 nav {
-    background-color: #FA32C9;
     padding-inline-start: 2rem;
 }
 
@@ -27,7 +26,7 @@ nav ol {
 }
 
 nav a {
-    color: white;
+    color: black;
     font-weight: 800;
     display: block;
     padding: 0.5rem 0;
