@@ -1,5 +1,5 @@
 :root {
-background-color: ##f9f2ee;
+background-color: #f9f2ee;
 --fg-color: #2B2774;
 font-size: 125%;
 }
@@ -10,6 +10,43 @@ body {
     color: var(--fg-color);
 }
 
+
+nav {
+    background-color: #FA32C9;
+    padding-inline-start: 2rem;
+}
+
+nav ol {
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;        /* mobile: stack vertically */
+    gap: 0.2rem;
+}
+
+nav a {
+    color: white;
+    font-weight: 800;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+/* ---- Desktop / Tablet ---- */
+@media (min-width: 700px) {
+    nav ol {
+        flex-direction: row;         /* horizontal */
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    nav li {
+        flex: 1;                     /* spreads buttons evenly */
+    }
+}
+
  p {
 	margin-top: 1rem;
     margin-bottom: 1rem;
@@ -17,7 +54,7 @@ body {
     padding-inline-end: 2rem;
 	}
 
-h1, h3, h2, footer {
+h1, h3, h2, ol {
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
 }
