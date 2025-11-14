@@ -1,6 +1,125 @@
 body {
-    background-color: white;
-    color: black;
-    font-family: 'system-ui', cursive;
+    color: white;
+    background-color: #002E27;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    background-color: #FFEC0D;
+}
+
+nav a {
+    color: #002E27;
+    font-family:"Limelight", sans-serif;
+}
+
+h1, h2 {
     font-size: 3rem;
+    color: #FFEC0D;
+    font-family:"Limelight", sans-serif;
+    font-weight: 600;
+}
+
+.author {
+    color: white;
+    font-weight: 600;
+}
+
+.intro {
+    color: #FFEC0D;
+    font-weight: 600;
+    font-style: italic;
+}
+
+h3 {
+	color: #f9f2ee;
+    font-family: "Roboto", sans-serif;
+	font-size: 3rem;
+	font-weight: 700;
+
+	background-color: #FFF9D4;
+
+	margin-block-start: 4rem;
+	margin-block-end: 3rem;
+
+	display: flow-root;
+	inline-size: fit-content;
+	width: 90vw;
+
+	/* cinching the box */
+	&::before,
+	&::after {
+		content: ''; /* Gives us “empty” pseudos to work with. */
+		display: block;
+		visibility: hidden; /* We don’t need to see it or click it. */
+	}
+
+	&::before { margin-block-start: 0em; }
+	&::after { margin-block-end: 0em; }
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: #C2C2C2;
+}
+
+.yellow {
+    color: #FFEC0D;
+}
+
+.green {
+    color: #009146;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: #E31010;
+}
+
+.quote {
+    position: relative;
+    padding-left: 3rem;   /* space so text doesn't touch the line */
+    color:  #FFEC0D;
+    font-style: italic;
+}
+
+.quote::before {
+    content: "";
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    height: 100%;
+    width: 3px;           /* thickness of the line */
+    background: #FFEC0D;
+}
+
+.quoteauthor {
+    color: #FFEC0D;
+    font-weight: 600;
+}
+
+.question {
+    color: #FFEC0D;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.citation ol{
+    color: white;
+    font-size: 60%;
+    list-style: decimal;
+    font-family: "Roboto", sans-serif;
+}
+
+.credits {
+    font-size: 80%
 }
