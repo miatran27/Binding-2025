@@ -1,0 +1,104 @@
+:root {
+    font-family: helvetica;
+    font-size: 125%;
+    p {
+	margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+	}
+
+nav {
+    background-color: #F13F40;
+}
+
+nav a {
+    font-family: "Inria Serif", serif;
+}
+
+    h1, h2, h3, .citation {
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+    }
+}
+
+h1, h2 {
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #F13F40;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+.intro {
+    padding-block-start: 0.5rem;
+    padding-block-end: 0.5rem;
+    font-weight: 600; 
+    font-style: italic;
+}
+
+
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+blockquote {
+    background-color: #FADE2F;
+    padding-block-start: 4rem;
+    padding-block-end: 4rem;
+    z-index: 0;
+    position: relative;
+}
+    blockquote .quote {
+        font-weight: 600;
+        z-index: 2;
+        position: relative;
+        max-width: 95vw;
+    }
+
+    blockquote .quoteauthor {
+        color: 474535;
+        font-weight: 400;
+     position: relative;
+        z-index: 2;
+    }
+
+
+blockquote::before {
+	content: '“';
+	position: absolute;
+	font-size: 10rem;
+	color: white;
+    top: -1rem;
+    left: 2rem;
+    z-index: 1;
+    font-weight: 700;
+
+}
+
+blockquote::after {
+	content: '”';
+	position: absolute;
+	font-size: 35rem;
+	color: white;
+    top: 6rem;
+    right: 0rem;
+    z-index: 1;
+    opacity: 0.4;
+    font-weight: 700;
+}
+
+.question {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.citation ol{
+    font-size: 60%;
+    list-style: decimal;
+}
