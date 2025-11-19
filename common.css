@@ -53,11 +53,8 @@ nav a {
     padding-inline-end: 2rem;
 	}
 
-h1, h3, h2, ol {
+h3, h2, ol {
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
 }
 
-h1 {
-    padding-block-start: 2rem;
-}
