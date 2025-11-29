@@ -65,7 +65,9 @@ h1, h3, h2, ol {
 }
 
 h2 {
+    font-family: "Noto Sans Telugu", sans-serif;
     padding-block-start: 2rem;
+    font-size: 1.5rem;
 }
 
 h1, h2 {
