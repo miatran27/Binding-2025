@@ -19,7 +19,7 @@ body {
 
 
 nav {
-    padding-inline-start: 0;      /* remove left padding */
+
     display: flex;
     justify-content: center;       /* centers the ol horizontally */
 }
@@ -27,6 +27,7 @@ nav {
 nav ol {
     margin: 0;
     padding: 0;
+    padding-inline-start: 1rem;  
     display: flex;
     flex-direction: column;
 }
@@ -40,16 +41,19 @@ nav a {
 }
 /* ---- Desktop / Tablet ---- */
 @media (min-width: 700px) {
-    nav ol {
-        flex-direction: row;         /* horizontal */
-        justify-content: space-between;
-        align-items: center;
-        gap: 2rem;
-    }
 
-    nav li {
-        flex: 1;                     /* spreads buttons evenly */
-    }
+nav {
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+}
+
+nav ol {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
 }
 
  p {
