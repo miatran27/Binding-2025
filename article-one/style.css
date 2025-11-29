@@ -13,9 +13,9 @@ nav a {
     font-family: "Inria Serif", serif;
 }
 
-h2, h3, .citation {
-    padding-inline-start: 2rem;
-    padding-inline-end: 2rem;
+.citation {
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
     }    
 
 .intro {
