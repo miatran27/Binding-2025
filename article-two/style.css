@@ -1,12 +1,6 @@
 :root {
-    font-family: helvetica;
     font-size: 125%;
-    p {
-	margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-inline-start: 2rem;
-    padding-inline-end: 2rem;
-	}
+}
 
 nav {
     background-color: #F13F40;
@@ -16,35 +10,12 @@ nav a {
     font-family: "Inria Serif", serif;
 }
 
-    h1, h2, h3, .citation {
-    padding-inline-start: 2rem;
-    padding-inline-end: 2rem;
-    }
-}
-
-h1, h2 {
-    font-family: "Inria Serif", serif;
-    font-weight: 700;
-    font-size: 3.5rem;
-    color: #F13F40;
-}
-
-h1 {
-    margin-bottom: 1.5rem;
-}
 
 .intro {
     padding-block-start: 0.5rem;
     padding-block-end: 0.5rem;
     font-weight: 600; 
     font-style: italic;
-}
-
-
-
-h3 {
-    font-weight: 700;
-    font-size: 2rem;
 }
 
 blockquote {
@@ -54,18 +25,19 @@ blockquote {
     z-index: 0;
     position: relative;
 }
-    blockquote .quote {
-        font-weight: 600;
-        z-index: 2;
-        position: relative;
-        max-width: 95vw;
+   
+blockquote .quote {
+    font-weight: 600;
+    z-index: 2;
+    position: relative;
+    max-width: 95vw;
     }
 
-    blockquote .quoteauthor {
-        color: 474535;
-        font-weight: 400;
-     position: relative;
-        z-index: 2;
+blockquote .quoteauthor {
+    color: 474535;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
     }
 
 
@@ -91,14 +63,4 @@ blockquote::after {
     z-index: 1;
     opacity: 0.4;
     font-weight: 700;
-}
-
-.question {
-    font-weight: 600;
-    font-style: italic;
-}
-
-.citation ol{
-    font-size: 60%;
-    list-style: decimal;
 }

@@ -1,7 +1,13 @@
 :root {
-background-color: #f9f2ee;
---fg-color: #2B2774;
+background-color: #093032;
 font-size: 125%;
+    p {
+	margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+    color: white;
+	}
 }
 
 body {
@@ -51,10 +57,30 @@ nav a {
     margin-bottom: 1rem;
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
+    color: white;
 	}
 
-h3, h2, ol {
+h1, h3, h2, ol {
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
 }
 
+
+h1, h2 {
+    font-weight: 700;
+    color: #F13F40;
+}
+
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Noto Sans Telugu", sans-serif;
+    position: relative;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+}
