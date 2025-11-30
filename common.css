@@ -1,15 +1,16 @@
 :root {
 background-color: #093032;
 font-size: 125%;
-    p {
-	margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding-inline-start: 1rem;
-    padding-inline-end: 1rem;
-    color: white;
-    line-height: 1.3rem;
-	}
 }
+    p {
+
+    margin-bottom: 2rem;
+    padding-inline-start: 7vw;
+    padding-inline-end: 7vw;
+    color: white;
+    line-height: 140%;
+	}
+
 
 body {
    
@@ -37,44 +38,35 @@ nav a {
     padding: 0.5rem;
     min-width: max-content;
 }
-/* ---- Desktop / Tablet ---- */
-@media (min-width: 700px) {
 
-nav {
-    padding-inline-start: 1rem;
-    padding-inline-end: 1rem;
+
+.author {
+    font-size: 1.3rem;
+    font-family: "Noto Sans Telugu", sans-serif;
+    font-weight: 700;
 }
 
-nav ol {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    width: 100%;
+.intro p{
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
 }
-}
-
- p {
-	margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-inline-start: 2rem;
-    padding-inline-end: 2rem;
-    color: white;
-	}
 
 h2, h3, ol {
-    padding-inline-start: 1rem;
+    padding-inline-start: 7vw;
+    padding-inline-end: 7vw;
 }
 
 h2 {
     font-family: "Noto Sans Telugu", sans-serif;
-    padding-block-start: 2rem;
     font-size: 1.5rem;
+    padding-block-start: 2rem;
+    padding-block-end: 1rem;
 }
 
 h1, h2 {
     font-weight: 700;
     color: #F13F40;
+    
 }
 
 
@@ -90,4 +82,53 @@ h1 {
 h3 {
     font-weight: 700;
     font-size: 2rem;
+    padding-block-start: 0.5rem;
+    padding-block-end: 1rem;
+    color: white;
 }
+
+.credits p {
+    font-size: 0.8rem;
+    padding-block-start: 2rem;
+}
+
+
+
+/* ---- Desktop / Tablet ---- */
+
+
+@media (min-width: 785px) {
+    nav {
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ol {
+        padding-inline-start: 1rem;
+        padding-inline-end: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        width: auto;              /* let it size naturally */
+        max-width: 100%;          /* prevent overflow */
+    }
+    
+    nav a {
+        white-space: nowrap;      /* prevent wrapping */
+        padding: 0.5rem 1rem;     /* add horizontal padding */
+    }
+
+
+    p {
+        max-width: 130ch;
+        margin-inline: 11vw;
+    }
+    
+    h2, h3, ol {
+        margin-inline: 11vw;
+    }
+}
+
