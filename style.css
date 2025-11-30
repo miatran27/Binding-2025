@@ -1,0 +1,85 @@
+nav {
+  background-color: #093032;
+  font-family: Helvetica;
+  overflow: hidden;
+}
+ol {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  flex: 1;
+  position: relative;
+}
+a {
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  font-size: calc(2rem);
+}
+li:last-child:after,
+li:last-child:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  clip-path: circle(0);
+  opacity: 0;
+  transform: translate3d(0%, -100%, 0);
+  transition: opacity 1s, clip-path 1s, transform 1s 1s;
+}
+li:last-child:after {
+  background: #FADE2F;
+  mix-blend-mode: exclusion;
+}
+li:last-child:before {
+  background: green;
+  -webkit-clip-path: circle(0);	
+  mix-blend-mode: color-dodge;
+}
+li:hover ~ li:last-child:after,
+li:last-child:hover:after,
+li:hover ~ li:last-child:before,
+li:last-child:hover:before {
+  opacity: 1;
+  transition: 1s ease;
+}
+/* First link hover */
+li:first-child:hover ~ li:last-child:after {
+  transform: translate3d(0, -200%, 0);
+  clip-path: circle(10vh);
+}
+li:first-child:hover ~ li:last-child:before {
+  transform: translate3d(10%, -190%, 0);
+  clip-path: circle(6vh);
+}
+/* Second link hover */
+li:nth-child(2):hover ~ li:last-child:after {
+  transform: translate3d(0%, -100%, 0);
+  clip-path: circle(10vh);
+}
+li:nth-child(2):hover ~ li:last-child:before {
+  transform: translate3d(-10%, -100%, 0);
+  clip-path: circle(6vh);
+}
+/* Third link (last) hover */
+li:last-child:hover:after {
+  transform: translate3d(0%, 0%, 0);
+  clip-path: circle(10vh);
+}
+li:last-child:hover:before {
+  transform: translate3d(10%, 0%, 0);
+  clip-path: circle(6vh);
+}
