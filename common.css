@@ -26,6 +26,7 @@ nav {
 
 nav ol {
     padding-inline-start: 1rem;  
+    padding-block-start: 0.6rem;
     display: flex;
     flex-direction: column;
 }
