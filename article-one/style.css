@@ -1,17 +1,7 @@
 /* Article 1 Style */
 
 :root {
-    font-size: 125%;
-    background-color: #093032;
-}
-
-nav {
-    background-color: #F13F40;
-}
-
-nav a {
-    font-family: "Inria Serif", serif;
-}
+    font-size: 125%;}
 
 .citation {
     padding-inline-start: 1rem;

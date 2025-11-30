@@ -20,12 +20,11 @@ body {
 
 
 nav {
-
     display: flex;
+    background-color: #F13F40;
 }
 
 nav ol {
-
     padding-inline-start: 1rem;  
     display: flex;
     flex-direction: column;
@@ -35,8 +34,9 @@ nav a {
     color: black;
     font-weight: 800;
     display: block;
-    padding: 0.5rem;
+    padding: 0.6rem;
     min-width: max-content;
+    font-family: "Noto Sans Telugu", sans-serif;
 }
 
 
