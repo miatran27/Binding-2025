@@ -61,11 +61,11 @@ blockquote::after {
 @media (min-width: 785px) {
     p {
         max-width: 120ch;
-        margin-inline: 14vw;
+        margin-inline: 16vw;
     }
 
     h2, h3 {
-        margin-inline: 14vw;
+        margin-inline: 16vw;
     }
 
 }
