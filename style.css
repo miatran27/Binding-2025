@@ -1,8 +1,29 @@
 .hero {
-  height: 100vh; /* 100% of viewport height */
-  width: 100vw; /* 100% of viewport width (optional, usually full by default) */
-  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  background-color: #FBFFD9;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
+
+.heroimage {
+  width: 100%;
+  max-height: 70vh; /* Limits image height to 70% of viewport */
+  height: auto;
+  object-fit: cover; /* Maintains aspect ratio while filling space */
+  transform: translateY(-2rem);
+  flex-shrink: 0;
+}
+
+.hero h1 {
+  margin-top: -2rem;
+}
+
+p {
+  color: black;
+}
+
 
 nav {
   background-color: #093032;
@@ -92,4 +113,30 @@ li:last-child:hover:before {
 
 li:first-child {
   padding-block-start: 14rem;
+}
+
+
+@media (min-width: 785px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+
+  .heroimage {
+    position: absolute;
+    right: -15%; /* Pushes image past right edge to cut it off */
+    width: 60%; /* Adjust size as needed */
+    max-height: 100vh;
+    transform: translateY(0); /* Reset the top cutoff */
+  }
+}
+
+.hero h1 {
+  margin-top: -2rem;
+}
+
+ /* To preent horizontal scroll, investigate this more*/
+html, body {
+  overflow-x: hidden;
 }
