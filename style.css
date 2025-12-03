@@ -1,29 +1,46 @@
+body {
+  display: grid;
+  grid-template-rows: auto auto; /* Hero takes what it needs, nav follows */
+  min-height: 100vh;
+}
+
 .hero {
-  height: 100vh;
-  width: 100vw;
+  height: 100vh; /* 100% of viewport height */
+  width: 100vw; /* 100% of viewport width (optional, usually full by default) */
   background-color: #FBFFD9;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
+  /* Remove height: 100vh - let content determine height */
+}
+
+.navigation {
+  top: 3rem;
 }
 
 .heroimage {
   width: 100%;
-  max-height: 70vh; /* Limits image height to 70% of viewport */
+  max-height: 70vh;
   height: auto;
-  object-fit: cover; /* Maintains aspect ratio while filling space */
+  object-fit: cover;
   transform: translateY(-2rem);
   flex-shrink: 0;
+  top: -30
 }
 
 .hero h1 {
   margin-top: -2rem;
 }
 
-p {
+.hero p {
+  margin-top: 1rem;
   color: black;
 }
 
+.navigation {
+  /* Navigation will naturally sit below hero */
+}
 
 nav {
   background-color: #093032;
