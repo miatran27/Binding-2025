@@ -29,7 +29,7 @@
 /* Top right SVG */
 .svgtop {
 		position: absolute;
-		top: 8rem;
+		inset-block-start: 0;
 		left: 0rem;
         margin-inline-start: 0rem;
 		width: 60%;
@@ -39,7 +39,7 @@
 .svgbottom {
 		content: '”';
 		position: absolute;
-		bottom: 0rem;
+		inset-block-end: 0rem;
 		right: -0.05rem;
 		width: 60%;
 		transform: scaleX(-1);
