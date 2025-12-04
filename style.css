@@ -81,6 +81,7 @@ nav a {
   font-size: clamp(1.2rem, 3vw, 2.5rem); /* Responsive - not calc() */
   font-weight: normal; /* Override common bold */
   min-width: auto; /* Override common min-width */
+  font-family: 'Graph FF Condensed';
   
 }
 
