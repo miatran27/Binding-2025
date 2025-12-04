@@ -5,7 +5,6 @@ body {
 }
 
 .hero {
-  height: 100vh; /* 100% of viewport height */
   width: 100vw; /* 100% of viewport width (optional, usually full by default) */
   background-color: #FBFFD9;
   overflow: hidden;
@@ -15,9 +14,7 @@ body {
   /* Remove height: 100vh - let content determine height */
 }
 
-.navigation {
-  top: 3rem;
-}
+
 
 .heroimage {
   width: 100%;
@@ -36,6 +33,7 @@ body {
 .hero p {
   margin-top: 1rem;
   color: black;
+  margin-bottom: 2rem;
 }
 
 .navigation {
@@ -135,6 +133,8 @@ li:first-child {
 
 @media (min-width: 785px) {
   .hero {
+    height: 100vh; /* 100% of viewport height */
+   width: 100vw; /* 100% of viewport width (optional, usually full by default) */
     flex-direction: row;
     align-items: center;
     position: relative;
@@ -151,6 +151,12 @@ li:first-child {
 
 .hero h1 {
   margin-top: -2rem;
+}
+
+.hero p {
+  margin-top: 1rem;
+  color: black;
+  margin-bottom: 2rem;
 }
 
  /* To preent horizontal scroll, investigate this more*/
