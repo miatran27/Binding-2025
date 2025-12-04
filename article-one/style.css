@@ -8,42 +8,7 @@
     padding-inline-end: 1rem;
     }    
 
-.articlehero {
-	background-color: #062909;
-	width: 100%;
-	position: relative;
-	display: flow-root;
-}
 
-.articlehero h1 {
-		margin-block-start: 7rem;
-		margin-block-end: 7rem;
-		line-height: 130%;
-		position: relative;
-        color: white;
-        font-family: "Noto Sans Telugu", sans-serif;
-		font-size: 2.8rem;
-        font-weight: 800;
-}
-
-/* Top right SVG */
-.svgtop {
-		position: absolute;
-		inset-block-start: 0;
-		left: 0rem;
-        margin-inline-start: 0rem;
-		width: 60%;
-}
-
-/* Bottom right SVG - flipped horizontally */
-.svgbottom {
-		content: '”';
-		position: absolute;
-		inset-block-end: 0rem;
-		right: -0.05rem;
-		width: 60%;
-		transform: scaleX(-1);
-}
 
 .intro {
     padding-block-start: 0.5rem;
@@ -126,34 +91,3 @@ blockquote {
     color: black;
 }
 
-@media (min-width: 785px) {
-.svgtop {
-		position: absolute;
-		inset-block-start: 0;
-		left: 0rem;
-        margin-inline-start: 0rem;
-		width: 40%;
-}
-
-/* Bottom right SVG - flipped horizontally */
-.svgbottom {
-		content: '”';
-		position: absolute;
-		inset-block-end: 0rem;
-		padding-block-start: 2rem
-		right: -0.05rem;
-		width: 40%;
-		transform: scaleX(-1);
-}
-.articlehero h1 {
-		margin-block-start: 10rem;
-		margin-block-end: 11rem;
-		line-height: 130%;
-		position: relative;
-        color: white;
-        font-family: "Noto Sans Telugu", sans-serif;
-		font-size: 2.8rem;
-        font-weight: 800;
-}
-
-}

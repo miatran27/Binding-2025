@@ -11,6 +11,45 @@ font-size: 125%;
     line-height: 140%;
 	}
 
+/* ---- Hero section for all the article pages---- */
+
+.articlehero {
+	background-color: #062909;
+	width: 100%;
+	position: relative;
+	display: flow-root;
+}
+
+.articlehero h1 {
+		margin-block-start: 7rem;
+		margin-block-end: 7rem;
+		line-height: 130%;
+		position: relative;
+        color: white;
+        font-family: "Noto Sans Telugu", sans-serif;
+		font-size: 2.8rem;
+        font-weight: 800;
+}
+
+/* Top right SVG */
+.svgtop {
+		position: absolute;
+		inset-block-start: 0;
+		left: 0rem;
+        margin-inline-start: 0rem;
+		width: 60%;
+}
+
+/* Bottom right SVG - flipped horizontally */
+.svgbottom {
+		content: '”';
+		position: absolute;
+		inset-block-end: 0rem;
+		right: -0.05rem;
+		width: 60%;
+		transform: scaleX(-1);
+}
+
 
 body {
    
@@ -131,5 +170,14 @@ h3 {
     h2, h3, ol {
         margin-inline: 11vw;
     }
+
+
+    .svgtop, .svgbottom {
+		width: 40%;
+}
+    .articlehero h1 {
+		margin-block-start: 10rem;
+		margin-block-end: 11rem;
+}
 }
 
