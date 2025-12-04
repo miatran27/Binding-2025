@@ -1,5 +1,5 @@
 :root {
-background-color: #093032;
+background-color: #FBFFD9;
 font-size: 125%;
 }
     p {
@@ -7,7 +7,7 @@ font-size: 125%;
     margin-bottom: 2rem;
     padding-inline-start: 7vw;
     padding-inline-end: 7vw;
-    color: white;
+    color: black;
     line-height: 140%;
 	}
 
@@ -21,7 +21,7 @@ body {
 
 nav {
     display: flex;
-    background-color: #F13F40;
+    background-color: #062909;
 }
 
 nav ol {
@@ -32,7 +32,7 @@ nav ol {
 }
 
 nav a {
-    color: black;
+    color: white;
     font-weight: 800;
     display: block;
     padding: 0.6rem;
@@ -85,7 +85,7 @@ h3 {
     font-size: 2rem;
     padding-block-start: 0.5rem;
     padding-block-end: 1rem;
-    color: white;
+    color: black;
 }
 
 .credits p {

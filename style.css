@@ -42,17 +42,17 @@ body {
   justify-content: center;
 }
 
-/* Override common.css nav styles */
+
 nav {
   background-color: #093032;
-  font-family: Helvetica;
+  font-family: "Noto Sans Telugu", sans-serif;
   overflow: hidden;
   width: 100%;
-  display: block; /* Override common flex */
+  display: block; 
   padding: 2rem 0;
 }
 
-/* Override common.css ol styles */
+
 nav ol {
   display: flex;
   flex-direction: column;
@@ -61,15 +61,15 @@ nav ol {
   margin: 0;
   padding: 0;
   transform: translateY(-11.5rem);
-  padding-inline-start: -4; /* Override common.css padding */
-    margin-bottom: -10rem;
+  padding-inline-start: -4; 
+  margin-bottom: -10rem;
 }
 
 nav li {
   position: relative;
 }
 
-/* Override common.css link styles */
+
 nav a {
   color: white;
   display: flex;
@@ -81,6 +81,7 @@ nav a {
   font-size: clamp(1.2rem, 3vw, 2.5rem); /* Responsive - not calc() */
   font-weight: normal; /* Override common bold */
   min-width: auto; /* Override common min-width */
+  
 }
 
 li:last-child:after,
@@ -102,7 +103,7 @@ li:last-child:after {
   mix-blend-mode: exclusion;
 }
 li:last-child:before {
-  background: green;
+  background: #F04532;
   -webkit-clip-path: circle(0);	
   mix-blend-mode: color-dodge;
 }
@@ -151,7 +152,7 @@ li:first-child {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Left for text, right for image */
+    grid-template-columns: 1.5fr 2fr; /* Left for text, right for image */
     align-items: center;
     position: relative;
     overflow: hidden; /* Essential for cutting edges */
@@ -160,7 +161,6 @@ li:first-child {
   .herotext {
     grid-column: 1; /* Keeps text on left */
     padding: 3rem 4rem;
-    z-index: 1;
     text-align: left;
   }
 
@@ -168,10 +168,11 @@ li:first-child {
     text-align: left;
   }
 
-    p {
-        max-width: 190ch;
-        margin-inline: -7vw;
-    }
+  p {
+     max-width: 190ch;
+     margin-inline: -7vw;
+     padding-inline-end: 0;
+  }
 
   .heroimage {
     grid-column: 2; /* Image on right */

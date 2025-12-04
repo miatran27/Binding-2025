@@ -82,13 +82,6 @@ blockquote {
 	}
 
 
-
-
-
-
-
-
-
 .question {
     font-weight: 600;
     font-style: italic;
@@ -97,5 +90,5 @@ blockquote {
 .citation ol{
     font-size: 0.8rem;
     list-style: decimal;
-    color: white;
+    color: black;
 }
