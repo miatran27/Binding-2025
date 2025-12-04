@@ -37,37 +37,52 @@ body {
 }
 
 .navigation {
-  /* Navigation will naturally sit below hero */
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
+/* Override common.css nav styles */
 nav {
   background-color: #093032;
   font-family: Helvetica;
   overflow: hidden;
+  width: 100%;
+  display: block; /* Override common flex */
   padding: 2rem 0;
 }
-ol {
+
+/* Override common.css ol styles */
+nav ol {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
+  transform: translateY(-11.5rem);
+  padding-inline-start: -4; /* Override common.css padding */
+    margin-bottom: -10rem;
 }
-li {
+
+nav li {
   position: relative;
 }
-a {
+
+/* Override common.css link styles */
+nav a {
   color: white;
   display: flex;
   width: 100%;
   padding: 2rem;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
   position: relative;
-  font-size: calc(2rem);
+  font-size: clamp(1.2rem, 3vw, 2.5rem); /* Responsive - not calc() */
+  font-weight: normal; /* Override common bold */
+  min-width: auto; /* Override common min-width */
 }
+
 li:last-child:after,
 li:last-child:before {
   content: "";
@@ -133,33 +148,41 @@ li:first-child {
 
 @media (min-width: 785px) {
   .hero {
-    height: 100vh; /* 100% of viewport height */
-   width: 100vw; /* 100% of viewport width (optional, usually full by default) */
-    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Left for text, right for image */
     align-items: center;
     position: relative;
+    overflow: hidden; /* Essential for cutting edges */
   }
+
+  .herotext {
+    grid-column: 1; /* Keeps text on left */
+    padding: 3rem 4rem;
+    z-index: 1;
+    text-align: left;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+    p {
+        max-width: 190ch;
+        margin-inline: -7vw;
+    }
 
   .heroimage {
+    grid-column: 2; /* Image on right */
     position: absolute;
-    right: -15%; /* Pushes image past right edge to cut it off */
-    width: 60%; /* Adjust size as needed */
-    max-height: 100vh;
-    transform: translateY(0); /* Reset the top cutoff */
+    right: -25%; /* Cuts right edge more aggressively */
+    top: 50%; /* Centers vertically */
+    width: 90%; /* Large enough to bleed off edges */
+    height: auto;
+    transform: translateY(-50%) scale(1.4); /* Centers and scales up 40% */
+    object-fit: cover;
   }
-}
 
-.hero h1 {
-  margin-top: -2rem;
-}
 
-.hero p {
-  margin-top: 1rem;
-  color: black;
-  margin-bottom: 2rem;
-}
-
- /* To preent horizontal scroll, investigate this more*/
-html, body {
-  overflow-x: hidden;
 }
