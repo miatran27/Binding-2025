@@ -8,15 +8,50 @@
     padding-inline-end: 1rem;
     }    
 
+.articlehero {
+	background-color: #062909;
+	width: 100%;
+	position: relative;
+	display: flow-root;
+}
+
+.articlehero h1 {
+		margin-block-start: 7rem;
+		margin-block-end: 7rem;
+		line-height: 130%;
+		position: relative;
+        color: white;
+        font-family: "Noto Sans Telugu", sans-serif;
+		font-size: 3rem;
+        font-weight: 800;
+}
+
+/* Top right SVG */
+.svgtop {
+		position: absolute;
+		top: 8rem;
+		left: 0rem;
+        margin-inline-start: 0rem;
+		width: 60%;
+		/* transform: scaleX(-1); */
+}
+
+/* Bottom right SVG - flipped horizontally */
+.svgbottom {
+		content: '”';
+		position: absolute;
+		bottom: 0rem;
+		right: -0.05rem;
+		width: 60%;
+		transform: scaleX(-1);
+}
+
 .intro {
     padding-block-start: 0.5rem;
     padding-block-end: 0.5rem;
     font-weight: 600; 
     font-style: italic;
 }
-
-
-
 
 
 /* quote style */
@@ -35,7 +70,6 @@ blockquote {
 	position: relative;
 	display: flow-root;
 }
-	/* Michael was stumped by this: wouldn’t collapse negative margin with grid parent */
 
 	/* quote text style */
 	blockquote .quote, .quoteauthor {
