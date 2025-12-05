@@ -3,10 +3,9 @@
 }
 
 .intro p{
-    padding-block-start: 2rem;
+    padding-block-start: 6rem;
     padding-block-end: 0.5rem;
     font-weight: 600; 
-    font-style: italic;
 }
 
 blockquote {
