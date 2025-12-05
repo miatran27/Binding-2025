@@ -12,10 +12,10 @@ background-color: #FBFFD9;
 font-size: 125%;
 }
     p {
-
     margin-bottom: 2rem;
     padding-inline-start: 7vw;
     padding-inline-end: 7vw;
+    justify-content:center;
     color: black;
     line-height: 140%;
 	}
@@ -59,6 +59,14 @@ font-size: 125%;
 		transform: scaleX(-1);
 }
 
+.author {
+    text-align: center;
+    justify-content: center;
+    padding-block-start: 1rem;
+    font-size: 1.3rem;
+    font-family: "Noto Sans Telugu", sans-serif;
+    font-weight: 700;
+}
 
 body {
    
@@ -89,15 +97,11 @@ nav a {
 }
 
 
-.author {
-    font-size: 1.3rem;
-    font-family: "Noto Sans Telugu", sans-serif;
-    font-weight: 700;
-}
-
 .intro p{
     padding-block-start: 1rem;
     padding-block-end: 1rem;
+    color: #062909;
+    font-size: 2rem;
 }
 
 h2, h3, ol {
@@ -107,7 +111,7 @@ h2, h3, ol {
 
 h2 {
     font-family: "Noto Sans Telugu", sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding-block-start: 2rem;
     padding-block-end: 1rem;
 }
@@ -135,6 +139,68 @@ h3 {
     padding-block-end: 1rem;
     color: black;
 }
+
+/* quote style */
+blockquote {
+	background-color: #FADE2F;
+	font-weight: 500;
+	font-size: 1.15rem;
+	font-weight: 700;
+	margin-block-start: 3rem;
+	margin-block-end: 3rem;
+	margin-inline-start: 0vw;
+    margin-inline-end: 0vw;
+	padding-inline-start: 9vw;
+	width: 100%;
+	z-index: 0;
+	position: relative;
+	display: flow-root;
+}
+
+	/* quote text style */
+	blockquote .quote, .quoteauthor {
+		margin-inline-start: -1rem;
+		margin-block-start: 7rem;
+		line-height: 130%;
+		position: relative;
+		z-index: 2;
+        color: black;
+        font-family: "Noto Sans Telugu", sans-serif;
+        font-weight: 800;
+	}
+    
+    .quoteauthor {
+        margin-block-start: 2rem;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    	/* quotation marks style */
+	blockquote::before {
+		content: '“';
+		position: absolute;
+		top: -1rem;
+		left: -0.36rem;
+		font-style: normal;
+		color: white;
+		z-index: 1;
+        font-size: 12rem;
+        font-family: Helvetica;
+        margin-inline-start: 1rem;
+	}
+
+	blockquote::after {
+		content: '”';
+		position: absolute;
+		bottom: -23.5rem;
+		right: -0.05rem;
+		font-style: normal;
+		font-size: 35rem;
+		color: white;
+		z-index: 1;
+        font-family: Helvetica;
+        opacity: 30%;
+	}
+
 
 .credits p {
     font-size: 0.8rem;
@@ -187,6 +253,17 @@ h3 {
     .articlehero h1 {
 		margin-block-start: 10rem;
 		margin-block-end: 11rem;
+        font-size: 5.5rem;
+        padding: 1rem;
 }
+
+	blockquote .quote {
+		max-width: 90ch;
+	}
+
+	blockquote .quote, .quoteauthor {
+		margin-inline-start: 1rem;
+	}
+
 }
 

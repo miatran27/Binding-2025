@@ -18,71 +18,12 @@
 }
 
 
-/* quote style */
-blockquote {
-	background-color: #FADE2F;
-	font-weight: 500;
-	font-size: 1.15rem;
-	font-weight: 700;
-	margin-block-start: 3rem;
-	margin-block-end: 3rem;
-	margin-inline-start: 0vw;
-    margin-inline-end: 0vw;
-	padding-inline-start: 9vw;
-	width: 100%;
-	z-index: 0;
-	position: relative;
-	display: flow-root;
-}
-
-	/* quote text style */
-	blockquote .quote, .quoteauthor {
-		margin-inline-start: -1rem;
-		margin-block-start: 7rem;
-		line-height: 130%;
-		position: relative;
-		z-index: 2;
-        color: black;
-        font-family: "Noto Sans Telugu", sans-serif;
-        font-weight: 800;
-	}
-    
-    .quoteauthor {
-        margin-block-start: 2rem;
-        font-weight: 400;
-        font-size: 1rem;
-    }
-    	/* quotation marks style */
-	blockquote::before {
-		content: '“';
-		position: absolute;
-		top: -1rem;
-		left: -0.36rem;
-		font-style: normal;
-		color: white;
-		z-index: 1;
-        font-size: 12rem;
-        font-family: Helvetica;
-        margin-inline-start: 1rem;
-	}
-
-	blockquote::after {
-		content: '”';
-		position: absolute;
-		bottom: -23.5rem;
-		right: -0.05rem;
-		font-style: normal;
-		font-size: 35rem;
-		color: white;
-		z-index: 1;
-        font-family: Helvetica;
-        opacity: 30%;
-	}
-
 
 .question {
     font-weight: 600;
     font-style: italic;
+	color: #062909;
+	font-size: 2rem;
 }
 
 .citation ol{
@@ -91,3 +32,12 @@ blockquote {
     color: black;
 }
 
+@media (min-width: 785px) {
+blockquote .quote, .quoteauthor {
+		margin-inline-start: 3rem;
+	}
+
+blockquote .quote{
+	font-size: 1.5rem;
+}
+}
