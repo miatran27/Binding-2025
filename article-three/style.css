@@ -2,15 +2,42 @@
     font-size: 125%;
 }
 
-
-
-.intro {
-    padding-block-start: 0.5rem;
+.intro p{
+    padding-block-start: 2rem;
     padding-block-end: 0.5rem;
     font-weight: 600; 
     font-style: italic;
 }
 
+blockquote {
+	background: linear-gradient(90deg, #FADE2F, #F13F40);
+}
+
+blockquote .quote, .quoteauthor {
+	color: white;
+}
+
+.callout {
+	font-size: 2rem;
+	color: #062909;
+	font-weight: 550;
+}
+
+em {
+	font-size: 2.5rem;
+}
+
+.pink{
+	color:magenta;
+}
+
+.purple {
+	color: purple;
+}
+
+.blue {
+	color: blue;
+}
 
 @media (min-width: 785px) {
     p {

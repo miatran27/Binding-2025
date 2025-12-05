@@ -2,11 +2,30 @@
     font-size: 125%;
 }
 
-.intro {
-    padding-block-start: 0.5rem;
+.author {
+    text-align: center;
+    justify-content: center;
+    padding-block-start: 1rem;
+    font-size: 1.3rem;
+    font-family: "Noto Sans Telugu", sans-serif;
+    font-weight: 700;
+}
+
+.intro p{
+    padding-block-start: 2rem;
     padding-block-end: 0.5rem;
     font-weight: 600; 
     font-style: italic;
+}
+
+.callout {
+	font-size: 2rem;
+	color: #062909;
+	font-weight: 550;
+}
+
+.callout em {
+    background-color: #FADE2F;
 }
 
 
@@ -15,6 +34,7 @@
     p {
         max-width: 120ch;
         margin-inline: 17vw;
+		font-weight: 500;
     }
 
     h2, h3 {

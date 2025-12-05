@@ -14,8 +14,6 @@ body {
   /* Remove height: 100vh - let content determine height */
 }
 
-
-
 .heroimage {
   width: 100%;
   max-height: 70vh;
@@ -28,12 +26,16 @@ body {
 
 .hero h1 {
   margin-top: -2rem;
+  font-family: 'Graph FF Condensed';
+  font-size: 6rem;
+  letter-spacing:0.1rem;
 }
 
 .hero p {
   margin-top: 1rem;
   color: black;
   margin-bottom: 2rem;
+  font-size: 1.15rem;
 }
 
 .navigation {

@@ -10,11 +10,12 @@
 
 
 
-.intro {
-    padding-block-start: 0.5rem;
+.intro p{
+    padding-block-start: 2rem;
     padding-block-end: 0.5rem;
     font-weight: 600; 
     font-style: italic;
+	max-width: 60ch;
 }
 
 
