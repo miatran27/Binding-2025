@@ -75,7 +75,7 @@ font-size: 125%;
     text-align: center;
     justify-content: center;
     padding-block-start: 1rem;
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -184,8 +184,9 @@ blockquote {
 		position: relative;
 		z-index: 2;
         color: black;
-        font-family:  "Roboto", sans-serif;
-        font-weight: 800;
+        /* font-family:  "Roboto", sans-serif; */
+        font-family: "Anton", sans-serif;
+        /* font-weight: 800; */
 	}
     
     .quoteauthor {
