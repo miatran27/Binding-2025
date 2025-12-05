@@ -18,10 +18,13 @@
 }
 
 .question {
-    font-weight: 600;
-    font-style: italic;
-	color: #062909;
 	font-size: 2rem;
+	color: #062909;
+	font-weight: 550;
+}
+
+.question em {
+    background-color: #FADE2F;
 }
 
 .citation ol{
